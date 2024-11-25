@@ -1,0 +1,114 @@
+/* .dashboard-container {
+    padding: 20px;
+  }
+  
+  .bot-settings {
+    margin-bottom: 30px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+   */
+
+
+.dashboard {
+  margin-top: 80px !important;
+}
+
+.dashboard-menu h4 {
+  background-color: #434343 !important;
+  color: white;
+  padding: 10px 0px;
+}
+/* //Footer */
+.Footer{
+  height: 200px;
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  background: #000000;  /* fallback for old browsers */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Footer a{
+  text-decoration: none;
+  color:white;
+  padding: 10px;
+
+}
+.Footer a:hover{
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+
+.card h1 {
+  font-size: 28px; /* Slightly larger heading */
+  color: #343a40; /* Dark gray color */
+  margin-bottom: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Make room for the navbar */
+body {
+  padding-top: 60px; /* Adjust this value to the height of your navbar */
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 60px; /* Place sidebar below navbar */
+  left: 0;
+  width: 250px;
+  height: calc(100% - 60px); /* Full height minus navbar height */
+  background-color: #f8f9fa;
+  padding: 15px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  z-index: 900; /* Ensure sidebar is below the navbar but above content */
+}
+
+/* Main content */
+.main-content {
+  margin-left: 270px; /* Ensure content has space for sidebar */
+  padding: 20px;
+  margin-top: 60px; /* Space for fixed navbar */
+}
+
+/* Card */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+}
+

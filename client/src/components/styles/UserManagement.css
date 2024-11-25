@@ -1,0 +1,171 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Make room for the navbar */
+  body {
+    padding-top: 60px; /* Adjust this value to the height of your navbar */
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 60px; /* Place sidebar below navbar */
+    left: 0;
+    width: 250px;
+    height: calc(100% - 60px); /* Full height minus navbar height */
+    background-color: #f8f9fa;
+    padding: 15px;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    z-index: 900; /* Ensure sidebar is below the navbar but above content */
+  }
+  
+  /* Main content */
+  .main-content {
+    margin-left: 270px; /* Ensure content has space for sidebar */
+    padding: 20px;
+    margin-top: 60px; /* Space for fixed navbar */
+  }
+  
+  /* Card */
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  /* Table */
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .user-table th,
+  .user-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .user-table tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 8px 12px;
+    margin: 1px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .btn-warning {
+    background-color: #f0ad4e;
+    color: white;
+  }
+  
+  .btn-danger {
+    background-color: #d9534f;
+    color: white;
+  }
+  
+  .btn-success {
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: static;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .main-content {
+      margin-left: 0;
+    }
+  }
+  
+  /* Mobile responsive design */
+@media (max-width: 768px) {
+    /* Sidebar */
+    .dashboard-menu {
+      position: static;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    /* Main content */
+    .main-content {
+      margin-left: 0;
+    }
+  
+    /* Table styling */
+    .user-table th,
+    .user-table td {
+      padding: 8px;
+    }
+  
+    /* Button spacing */
+    .btn {
+      margin: 5px 0;
+      width: 100%; /* Make buttons full width */
+      padding: 10px;
+    }
+  
+    /* Card padding */
+    .card {
+      padding: 15px;
+    }
+  }
+  
+  /* For very small screens */
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .user-table {
+      font-size: 12px; /* Smaller text for small screens */
+    }
+  
+    .user-table th, .user-table td {
+      padding: 5px;
+    }
+  
+    .btn {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
