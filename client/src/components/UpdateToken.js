@@ -250,7 +250,7 @@ const UpdateToken = () => {
       setLoading(true);
 
       // Log the endpoint to debug the issue
-      const endpoint = "http://localhost:5000/api/settings/telegram-bot-token";
+      const endpoint = "https://admin-panel-weather-server.onrender.com/api/settings/telegram-bot-token";
       console.log("Fetching from endpoint:", endpoint);
 
       // Make the API call
@@ -287,7 +287,7 @@ const UpdateToken = () => {
     }
 
     try {
-      const endpoint = "http://localhost:5000/api/settings/telegram-bot-token";
+      const endpoint = "https://admin-panel-weather-server.onrender.com/api/settings/telegram-bot-token";
       const response = await axios.post(endpoint, {
         token: newToken,
       });
