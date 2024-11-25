@@ -14,7 +14,7 @@ const UserManagement = () => {
   // Fetch users from the server
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/users");
+      const response = await axios.get("https://admin-panel-weather-server.onrender.com/api/users");
       setUsers(response.data);
     } catch (error) {
       console.error("Error fetching users:", error);
@@ -24,7 +24,7 @@ const UserManagement = () => {
   // Block a user
   const blockUser = async (id) => {
     try {
-      await axios.post(`http://localhost:5000/api/users/${id}/block`);
+      await axios.post(`https://admin-panel-weather-server.onrender.com/api/users/${id}/block`);
       fetchUsers(); // Refresh user list
     } catch (error) {
       console.error("Error blocking user:", error);
@@ -33,7 +33,7 @@ const UserManagement = () => {
 
   const subscribe = async (id) => {
     try {
-      await axios.post(`http://localhost:5000/api/users/${id}/subscribe`);
+      await axios.post(`https://admin-panel-weather-server.onrender.com/api/users/${id}/subscribe`);
       fetchUsers(); // Refresh user list
     } catch (error) {
       console.error("Error subscribing user:", error);
@@ -42,7 +42,7 @@ const UserManagement = () => {
 
   const unsubscribe = async (id) => {
     try {
-      await axios.post(`http://localhost:5000/api/users/${id}/unsubscribe`);
+      await axios.post(`https://admin-panel-weather-server.onrender.com/api/users/${id}/unsubscribe`);
       fetchUsers(); // Refresh user list
     } catch (error) {
       console.error("Error unblocking user:", error);
@@ -52,7 +52,7 @@ const UserManagement = () => {
   // Unblock a user
   const unblockUser = async (id) => {
     try {
-      await axios.post(`http://localhost:5000/api/users/${id}/unblock`);
+      await axios.post(`https://admin-panel-weather-server.onrender.com/api/users/${id}/unblock`);
       fetchUsers(); // Refresh user list
     } catch (error) {
       console.error("Error unblocking user:", error);
@@ -62,7 +62,7 @@ const UserManagement = () => {
   // Delete a user
   const deleteUser = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/users/${id}`);
+      await axios.delete(`https://admin-panel-weather-server.onrender.com/api/users/${id}`);
       fetchUsers(); // Refresh user list
     } catch (error) {
       console.error("Error deleting user:", error);
